@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #08090C;
+    color: #F8FAFC;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Pop-Art Dot Pattern overlay */
+.pop-dots-bg {
+  background-image: radial-gradient(#292E42 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.pop-dots-primary {
+  background-image: radial-gradient(rgba(0, 82, 255, 0.25) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+/* Pop-Art Sharp Borders & Shadows */
+.pop-card {
+  background-color: #12141C;
+  border: 2px solid #292E42;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pop-card:hover {
+  border-color: #0052FF;
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0px #0052FF;
+}
+
+.pop-card-red:hover {
+  border-color: #FF1E44;
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0px #FF1E44;
+}
+
+.pop-card-yellow:hover {
+  border-color: #FFD500;
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0px #FFD500;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08090C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #292E42;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0052FF;
+}
